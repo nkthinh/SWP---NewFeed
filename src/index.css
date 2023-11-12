@@ -1,0 +1,52 @@
+@import 'preflight.css';
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fixed-sidebar .ant-layout-sider-children {
+  width: 300px;
+  position: fixed;
+  height: calc(100vh - 64px);
+  left: 0;
+}
+
+.custom-bar::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+.custom-bar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.custom-bar::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.custom-bar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+/*Layout sider*/
+#components-layout-demo-responsive .logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.site-layout-sub-header-background {
+  background: #fff;
+}
+
+.site-layout-background {
+  background: #fff;
+}
